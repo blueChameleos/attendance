@@ -16,8 +16,11 @@ public class Student implements Attendee{
 	}
 	
 	public void setPresent(boolean present) {
-		if(!this.inClass) {
+		if(present == true) {
 			this.inClass = true;
+		}
+		else {
+			this.inClass = false;
 		}
 	}
 	
