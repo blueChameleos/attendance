@@ -9,6 +9,7 @@ public interface Attendee {
 	 * @return
 	 */
 	
+	
 	//returns true if the student has been marked present, false otherwise
 	boolean isPresent();
 

@@ -34,11 +34,17 @@ public class Student implements Attendee{
 	}
 	
 	public boolean mathces(String first, String last) {
-		return (first == this.first) && (last == this.last);
+		if(first.toLowerCase().equals(getFirstName().toLowerCase())){
+			if(last.toLowerCase().equals(getLastName())) {
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	public boolean matches(String last) {
-		return last == this.last;
+		return last.toLowerCase().equals(getLastName().toLowerCase());
 	}
 	
 	public String getReportString() {
