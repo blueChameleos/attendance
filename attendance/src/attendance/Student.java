@@ -16,12 +16,8 @@ public class Student implements Attendee{
 	}
 	
 	public void setPresent(boolean present) {
-		if(this.inClass) {
-			System.out.println(getFirstName() + " is already present in class.");
-		}
-		else {
+		if(!this.inClass) {
 			this.inClass = true;
-			System.out.println(getFirstName() + " successfully marked present.");
 		}
 	}
 	
